@@ -1,6 +1,10 @@
-# Clustering Stocks with a Self-Organizing Map (SOM)
+# Clustering Stocks 
 
-This project demonstrates how to cluster stocks based on their daily price variation using a Self-Organizing Map (SOM) algorithm. The SOM is a type of artificial neural network that can learn the underlying structure of high-dimensional data and group similar data points together.
+This project is a demonstration of how to cluster stocks values using a Self-Organizing Map (SOM) algorithm, a K-Means algorithm. Moreover, we will see how to solve the lack of dimensionality problem by using Principal Component Analysis (PCA) and Neural Network Encoder.
+
+To do this, we will use real stock prices from the S&P 600 companies over the last 5 years.
+
+We will also see if there is a correlation between the clusters and the sectors of the companies.
 
 The project is inspired by __**[this Kaggle notebook](https://www.kaggle.com/code/izzettunc/introduction-to-time-series-clustering)**__, which provides an introduction to time series clustering with a SOM algorithm. We've adapted the notebook to work with historical stock prices and added additional preprocessing and cleaning steps to ensure accurate clustering.
 
@@ -16,6 +20,9 @@ To run the notebook, you'll need to install the following Python packages:
 - [scikit-learn](https://scikit-learn.org/stable/)
 - [minisom](https://pypi.org/project/MiniSom/)
 - [numpy](https://numpy.org/)
+- [torch](https://pytorch.org/)
+- [tslearn](https://tslearn.readthedocs.io/en/stable/index.html)
+
 
 You can install these packages using pip by running the following command in your terminal (using requirements.txt):
 
@@ -39,6 +46,7 @@ jupyter notebook
 ```
 
 This should open a browser window displaying the project files. Click on **clustering_stocks.ipynb** to launch the notebook.
+
 
 
 
